@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sucrélya – Bar à desserts à Cambrai | Crêpes, gaufres, milkshakes</title>
+<meta name="description" content="Sucrélya, bar à desserts au 4 rue Pasteur à Cambrai : crêpes gourmandes, gaufres généreuses, milkshakes onctueux, smoothies frais, cookies et boissons gourmandes.">
+<meta property="og:title" content="Sucrélya – Bar à desserts à Cambrai">
+<meta property="og:description" content="Crêpes, gaufres, milkshakes et smoothies au 4 rue Pasteur, Cambrai. Un moment 100 % plaisir.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&family=Playfair+Display:ital,wght@1,700&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DessertShop",
+  "name": "Sucrélya",
+  "description": "Bar à desserts : crêpes, gaufres, milkshakes, smoothies, cookies et boissons gourmandes.",
+  "telephone": "+33670497636",
+  "email": "sucrelyacambrai@gmail.com",
+  "address": {"@type": "PostalAddress","streetAddress": "4 rue Pasteur","postalCode": "59400","addressLocality": "Cambrai","addressCountry": "FR"},
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification","dayOfWeek": ["Tuesday","Thursday"],"opens": "13:00","closes": "19:00"},
+    {"@type": "OpeningHoursSpecification","dayOfWeek": "Wednesday","opens": "10:30","closes": "19:00"},
+    {"@type": "OpeningHoursSpecification","dayOfWeek": "Friday","opens": "13:00","closes": "20:00"},
+    {"@type": "OpeningHoursSpecification","dayOfWeek": "Saturday","opens": "10:30","closes": "20:00"},
+    {"@type": "OpeningHoursSpecification","dayOfWeek": "Sunday","opens": "15:00","closes": "18:00"}
+  ],
+  "sameAs": ["https://www.instagram.com/sucrelya_cambrai/","https://www.facebook.com/p/Sucrelya-61592575572332/"]
+}
+</script>
+<style>
+:root{
+  --rose:#F8C8DA; --rose-pale:#FDEEF4; --cream:#FFF8FA;
+  --fuchsia:#E23C86; --neon:#FF3DBB; --choco:#4A2A28; --choco-soft:#7A5450;
+  --radius:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",system-ui,sans-serif;color:var(--choco);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:min(1120px,92vw);margin:0 auto}
+h2{font-family:"Fraunces",serif;font-weight:700;font-size:clamp(2rem,4.5vw,3rem);line-height:1.1;letter-spacing:-.01em}
+.kicker{font-size:.8rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--fuchsia);margin-bottom:.8rem;display:block}
+section{padding:clamp(4rem,9vw,7rem) 0}
+
+/* Nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s}
+.nav.scrolled{background:rgba(255,248,250,.92);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(74,42,40,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none}
+.logo{width:42px;height:42px;border-radius:50%;background:var(--rose);display:grid;place-items:center;font-family:"Playfair Display",serif;font-style:italic;font-weight:700;color:#fff;font-size:1.6rem;line-height:1}
+.brand span{font-family:"Yellowtail",cursive;font-size:1.7rem;color:var(--fuchsia)}
+.nav ul{display:flex;gap:1.8rem;list-style:none;font-weight:500;font-size:.95rem}
+.nav ul a{text-decoration:none;opacity:.85}.nav ul a:hover{opacity:1;color:var(--fuchsia)}
+.nav .call{background:var(--choco);color:#fff;text-decoration:none;padding:.6rem 1.1rem;border-radius:99px;font-weight:700;font-size:.9rem}
+@media(max-width:760px){.nav ul{display:none}}
+
+/* Hero */
+.hero{min-height:100svh;display:grid;align-items:center;padding:110px 0 60px;
+  background:repeating-linear-gradient(90deg,var(--rose-pale) 0 46px,#fff 46px 92px);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+.hero h1{font-family:"Yellowtail",cursive;font-weight:400;font-size:clamp(4.2rem,12vw,8.5rem);line-height:.95;color:var(--fuchsia);
+  text-shadow:0 0 18px rgba(255,61,187,.35)}
+.hero .tag{font-family:"Fraunces",serif;font-size:clamp(1.3rem,2.6vw,1.8rem);font-weight:600;margin:.8rem 0 1rem}
+.hero p.lead{font-size:1.1rem;max-width:30rem;color:var(--choco-soft)}
+.badges{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.6rem 0 2rem}
+.badges span{background:#fff;border:1.5px solid var(--rose);padding:.35rem .9rem;border-radius:99px;font-size:.9rem;font-weight:500}
+.ctas{display:flex;gap:.8rem;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.95rem 1.5rem;border-radius:99px;font-weight:700;text-decoration:none;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-main{background:var(--fuchsia);color:#fff;box-shadow:0 10px 24px -8px rgba(226,60,134,.6)}
+.btn-ghost{background:#fff;color:var(--choco);border:1.5px solid var(--choco)}
+.status{display:inline-flex;align-items:center;gap:.5rem;font-size:.9rem;font-weight:700;margin-bottom:1.2rem;background:#fff;padding:.35rem .85rem;border-radius:99px}
+.status i{width:9px;height:9px;border-radius:50%;background:#bbb}
+.status.open i{background:#2BB673;box-shadow:0 0 0 4px rgba(43,182,115,.2)}
+.hero-visual{position:relative;justify-self:center}
+.hero-visual .photo{width:min(380px,80vw);aspect-ratio:4/5;border-radius:200px 200px var(--radius) var(--radius);overflow:hidden;border:10px solid #fff;box-shadow:0 30px 60px -25px rgba(74,42,40,.45)}
+.hero-visual .photo img{width:100%;height:100%;object-fit:cover}
+.seal{position:absolute;left:-40px;bottom:30px;width:130px;height:130px;animation:spin 18s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr;text-align:center}.hero p.lead{margin:0 auto}.badges,.ctas{justify-content:center}.seal{left:-10px;width:100px;height:100px}}
+
+/* Univers */
+.univers .wrap{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.univers p{font-size:1.1rem;color:var(--choco-soft);margin-top:1.2rem}
+.univers .duo{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.univers .duo img{border-radius:var(--radius);aspect-ratio:3/4;object-fit:cover;width:100%}
+.univers .duo img:last-child{margin-top:3rem}
+@media(max-width:860px){.univers .wrap{grid-template-columns:1fr;gap:2.5rem}}
+
+/* Carte */
+.carte{background:var(--choco);color:#fff}
+.carte h2{color:#fff}.carte .kicker{color:var(--rose)}
+.carte .intro{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:3rem}
+.carte .intro p{max-width:26rem;opacity:.8}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+.card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:1.8rem 1.5rem;transition:background .25s,transform .25s}
+.card:hover{background:rgba(248,200,218,.14);transform:translateY(-4px)}
+.card .em{font-size:2.2rem;margin-bottom:1rem}
+.card h3{font-family:"Fraunces",serif;font-size:1.35rem;margin-bottom:.4rem}
+.card p{font-size:.95rem;opacity:.75}
+.note{margin-top:2rem;font-size:.95rem;opacity:.7}
+
+/* Engagement */
+.engage .box{background:var(--rose);border-radius:calc(var(--radius) * 1.5);padding:clamp(2rem,5vw,4rem);display:grid;grid-template-columns:auto 1fr;gap:2.5rem;align-items:center}
+.engage .ribbon{font-size:4.5rem}
+.engage p{margin-top:.8rem;font-size:1.05rem;max-width:44rem}
+@media(max-width:700px){.engage .box{grid-template-columns:1fr;text-align:center}}
+
+/* Infos */
+.infos .wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.hours{background:#fff;border-radius:var(--radius);padding:2rem;box-shadow:0 20px 50px -30px rgba(74,42,40,.35);margin-top:1.8rem}
+.hours li{display:flex;justify-content:space-between;padding:.75rem .4rem;border-bottom:1px dashed #EBD3DC;list-style:none;font-size:1.05rem}
+.hours li:last-child{border:0}
+.hours li.today{background:var(--rose-pale);border-radius:12px;font-weight:700;padding-inline:.9rem}
+.hours li.today::after{content:"Aujourd'hui";font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--fuchsia);margin-left:.6rem;align-self:center}
+.hours li .d{flex:1}
+.closed{color:var(--choco-soft);font-style:italic}
+.contact-list{list-style:none;margin-top:1.8rem;display:grid;gap:1rem}
+.contact-list li{display:flex;gap:1rem;align-items:flex-start;background:#fff;border-radius:18px;padding:1.1rem 1.3rem}
+.contact-list .ic{width:42px;height:42px;flex:none;border-radius:50%;background:var(--rose-pale);display:grid;place-items:center;font-size:1.2rem}
+.contact-list small{display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--choco-soft);font-weight:700}
+.contact-list a{font-weight:700;text-decoration:none}
+.contact-list a:hover{color:var(--fuchsia)}
+.socials{display:flex;gap:.7rem;margin-top:1.4rem;flex-wrap:wrap}
+@media(max-width:860px){.infos .wrap{grid-template-columns:1fr}}
+
+/* Neon band */
+.neon{position:relative;min-height:360px;display:grid;place-items:center;text-align:center;color:#fff;overflow:hidden;padding:4rem 1rem}
+.neon img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.45) saturate(1.2) blur(3px);transform:scale(1.05)}
+.neon div{position:relative}
+.neon p.big{font-family:"Yellowtail",cursive;font-size:clamp(2.6rem,7vw,4.5rem);color:#fff;text-shadow:0 0 8px var(--neon),0 0 24px var(--neon),0 0 48px var(--neon)}
+.neon p.sm{margin-top:.6rem;letter-spacing:.2em;text-transform:uppercase;font-size:.85rem;font-weight:700}
+
+/* Bandeau "En ce moment" */
+.now{background:var(--fuchsia);color:#fff;padding:1rem 0}
+.now .wrap{display:flex;align-items:center;justify-content:center;gap:.9rem;flex-wrap:wrap;text-align:center}
+.now .pill{background:#fff;color:var(--fuchsia);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:.3rem .75rem;border-radius:99px}
+.now p{font-weight:500}
+
+/* Carte à onglets */
+.tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.6rem}
+.tab{font:inherit;cursor:pointer;background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.25);padding:.6rem 1.1rem;border-radius:99px;font-weight:700;font-size:.95rem;transition:all .2s}
+.tab:hover{border-color:var(--rose)}
+.tab[aria-selected="true"]{background:var(--rose);border-color:var(--rose);color:var(--choco)}
+.panel{display:none;grid-template-columns:.8fr 1.2fr;gap:2.5rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:clamp(1.5rem,4vw,2.5rem)}
+.panel.active{display:grid;animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.panel .em{font-size:3rem}
+.panel h3{font-family:"Fraunces",serif;font-size:1.8rem;margin:.6rem 0 .5rem}
+.panel .desc{opacity:.75}
+.items{list-style:none}
+.items li{display:flex;align-items:baseline;gap:.6rem;padding:.85rem 0;border-bottom:1px dashed rgba(255,255,255,.18)}
+.items li:last-child{border:0}
+.items .n{font-weight:700}
+.items .dots{flex:1;border-bottom:2px dotted rgba(255,255,255,.2);transform:translateY(-4px)}
+.items .p{font-family:"Fraunces",serif;font-weight:700;color:var(--rose)}
+.items small{display:block;font-size:.85rem;opacity:.6;font-weight:400}
+.demo-note{display:inline-block;margin-top:1.4rem;font-size:.85rem;background:rgba(248,200,218,.15);border:1px dashed var(--rose);color:var(--rose);padding:.45rem .9rem;border-radius:10px}
+@media(max-width:760px){.panel{grid-template-columns:1fr;gap:1.2rem}}
+
+/* Instagram */
+.insta{background:var(--rose-pale)}
+.insta .head{display:flex;justify-content:space-between;align-items:end;gap:1.5rem;flex-wrap:wrap;margin-bottom:2rem}
+.insta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.insta-grid a{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:1}
+.insta-grid img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.insta-grid a:hover img{transform:scale(1.06)}
+.insta-grid a::after{content:"♡";position:absolute;inset:auto .8rem .7rem auto;color:#fff;font-size:1.3rem;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+@media(max-width:600px){.insta-grid{gap:.5rem}.insta-grid a{border-radius:14px}}
+
+/* Avis */
+.avis{background:var(--rose);position:relative;overflow:hidden}
+.avis::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.28) 0 46px,transparent 46px 92px);pointer-events:none}
+.avis .wrap{position:relative}
+.avis-head{display:flex;justify-content:space-between;align-items:end;gap:1.5rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.score{display:flex;align-items:center;gap:1rem;background:#fff;border-radius:20px;padding:1rem 1.4rem;text-decoration:none;box-shadow:0 14px 30px -18px rgba(74,42,40,.45)}
+.score .g{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:1.3rem;color:#fff;background:conic-gradient(#EA4335 0 25%,#FBBC05 0 50%,#34A853 0 75%,#4285F4 0)}
+.score strong{font-family:"Fraunces",serif;font-size:2rem;line-height:1;margin-right:.5rem}
+.score small{display:block;font-size:.8rem;color:var(--choco-soft);font-weight:700}
+.st{display:inline-block;position:relative;font-size:1.1rem;letter-spacing:.1rem;color:#EBD3DC;vertical-align:.2rem}
+.st::before{content:"★★★★★"}
+.st i{position:absolute;inset:0;width:var(--v);overflow:hidden;color:var(--fuchsia);white-space:nowrap}
+.st i::before{content:"★★★★★"}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.rv{background:#fff;border-radius:var(--radius);padding:1.8rem;display:flex;flex-direction:column;gap:1rem;position:relative;box-shadow:0 20px 40px -28px rgba(74,42,40,.5)}
+.rv::before{content:"“";position:absolute;top:.2rem;right:1.2rem;font-family:"Playfair Display",serif;font-size:5rem;color:var(--rose);line-height:1;pointer-events:none}
+.rv>*{position:relative}
+.rv-st{color:var(--fuchsia);letter-spacing:.15rem}
+.rv blockquote{flex:1;font-size:1.02rem;line-height:1.55}
+.rv figcaption{display:flex;align-items:center;gap:.8rem;border-top:1px dashed #EBD3DC;padding-top:1rem}
+.rv .av{width:40px;height:40px;border-radius:50%;background:var(--fuchsia);color:#fff;display:grid;place-items:center;font-weight:700}
+.rv small{display:block;font-size:.8rem;color:var(--choco-soft)}
+.avis-cta{display:flex;justify-content:center;gap:.8rem;flex-wrap:wrap;margin-top:2.2rem}
+@media(max-width:860px){.reviews{grid-template-columns:1fr}}
+
+/* Privatisation */
+.priv{background:#fff}
+.priv .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:3.5rem;align-items:start}
+.priv .perks{list-style:none;margin-top:1.6rem;display:grid;gap:.8rem}
+.priv .perks li{display:flex;gap:.8rem;align-items:center;font-weight:500}
+.priv .perks li span{width:40px;height:40px;border-radius:50%;background:var(--rose-pale);display:grid;place-items:center;flex:none}
+form.f{background:var(--cream);border:1.5px solid #F3DCE5;border-radius:var(--radius);padding:clamp(1.4rem,4vw,2.2rem);display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.f label{display:grid;gap:.35rem;font-size:.85rem;font-weight:700}
+.f .full{grid-column:1/-1}
+.f input,.f select,.f textarea{font:inherit;font-weight:400;padding:.8rem .9rem;border:1.5px solid #EBD3DC;border-radius:12px;background:#fff;color:var(--choco)}
+.f input:focus,.f select:focus,.f textarea:focus{outline:2px solid var(--fuchsia);outline-offset:1px;border-color:transparent}
+.f textarea{min-height:110px;resize:vertical}
+.f button{border:0;cursor:pointer;font:inherit;justify-content:center}
+.f .msg{font-size:.9rem;color:var(--choco-soft)}
+@media(max-width:860px){.priv .wrap{grid-template-columns:1fr}form.f{grid-template-columns:1fr}}
+
+/* Carte Google Maps */
+.map{grid-column:1/-1;margin-top:1rem;border-radius:var(--radius);overflow:hidden;height:340px;position:relative;
+  background:var(--rose-pale) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M0 20h40M20 0v40' stroke='%23F3DCE5' stroke-width='2'/%3E%3C/svg%3E")}
+.map .fb{position:absolute;inset:0;display:grid;place-items:center;text-align:center;font-weight:700;color:var(--choco-soft)}
+.map iframe{position:relative;width:100%;height:100%;border:0}
+
+/* Barre d'actions mobile */
+.mbar{display:none}
+@media(max-width:760px){
+  .mbar{display:grid;grid-template-columns:repeat(3,1fr);position:fixed;left:.6rem;right:.6rem;bottom:.6rem;z-index:70;background:var(--choco);border-radius:20px;padding:.35rem;box-shadow:0 12px 30px -10px rgba(0,0,0,.5)}
+  .mbar a{display:grid;justify-items:center;gap:.1rem;color:#fff;text-decoration:none;font-size:.75rem;font-weight:700;padding:.55rem 0;border-radius:15px}
+  .mbar a:first-child{background:var(--fuchsia)}
+  .mbar a b{font-size:1.15rem;line-height:1}
+  body{padding-bottom:84px}
+}
+
+footer{background:var(--choco);color:rgba(255,255,255,.75);padding:2.5rem 0;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center}
+footer .brand span{color:var(--rose)}
+footer a{color:#fff}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.seal{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="Sucrélya, accueil"><div class="logo">S</div><span>Sucrélya</span></a>
+    <ul>
+      <li><a href="#univers">Notre univers</a></li>
+      <li><a href="#carte">La carte</a></li>
+      <li><a href="#evenements">Événements</a></li>
+      <li><a href="#infos">Horaires & accès</a></li>
+    </ul>
+    <a class="call" href="tel:+33670497636">06 70 49 76 36</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="status" id="status"><i></i><span>Horaires</span></div>
+      <h1>Sucrélya</h1>
+      <p class="tag">Votre bar à desserts à Cambrai</p>
+      <p class="lead">Crêpes gourmandes, gaufres généreuses, milkshakes onctueux et smoothies frais, à partager entre amis, en famille… ou juste pour se faire plaisir.</p>
+      <div class="badges"><span>🥞 Crêpes</span><span>🧇 Gaufres</span><span>🥤 Milkshakes</span><span>🍓 Smoothies</span></div>
+      <div class="ctas">
+        <a class="btn btn-main" href="#carte">Découvrir la carte</a>
+        <a class="btn btn-ghost" href="#infos">📍 4 rue Pasteur</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="photo"><img src="img/crepe-fraise.jpg" alt="Crêpe rose nappée de coulis et de fraises fraîches"></div>
+      <svg class="seal" viewBox="0 0 200 200" aria-hidden="true">
+        <defs><path id="c" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
+        <circle cx="100" cy="100" r="98" fill="#F8C8DA"/>
+        <text font-family="DM Sans" font-size="15" font-weight="700" letter-spacing="3.2" fill="#fff"><textPath href="#c">UN MOMENT 100% PLAISIR • GAUFRES • CRÊPES • MILKSHAKES •</textPath></text>
+        <text x="100" y="124" text-anchor="middle" font-family="Playfair Display" font-style="italic" font-weight="700" font-size="76" fill="#fff">S</text>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<!-- Bandeau "En ce moment" : texte à mettre à jour selon l'actualité -->
+<div class="now" role="region" aria-label="En ce moment">
+  <div class="wrap"><span class="pill">En ce moment</span><p>Nouveau depuis la rentrée : ouverture dès <strong>10h30 le mercredi et le samedi</strong>, pour une gourmandise autour d'un café ☕</p></div>
+</div>
+
+<section class="univers" id="univers">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">Notre univers</span>
+      <h2>Une pause sucrée, tout en rose, en plein cœur de Cambrai</h2>
+      <p>Ouvert depuis août 2026, Sucrélya, c'est un comptoir lumineux, des néons roses et des desserts préparés sur place. On y vient pour le goûter, une gourmandise en fin de matinée autour d'un café, ou simplement pour passer un bon moment.</p>
+      <p>Notre promesse est simple : trouver votre nouveau péché mignon.</p>
+    </div>
+    <div class="duo reveal">
+      <img src="img/salle.jpg" alt="Le comptoir blanc et la salle de Sucrélya, avec son néon rose">
+      <img src="img/enseigne.jpg" alt="L'enseigne néon Sucrélya, rue Pasteur">
+    </div>
+  </div>
+</section>
+
+<section class="carte" id="carte">
+  <div class="wrap">
+    <div class="intro reveal">
+      <div><span class="kicker">La carte</span><h2>Ce qui vous attend</h2></div>
+      <p>Du sucré, encore du sucré, et quelques douceurs à boire. Nos créations évoluent au fil des saisons et des envies.</p>
+    </div>
+    <div class="reveal">
+      <div class="tabs" role="tablist" aria-label="Catégories de la carte">
+        <button class="tab" role="tab" aria-selected="true" data-t="crepes">🥞 Crêpes</button>
+        <button class="tab" role="tab" aria-selected="false" data-t="gaufres">🧇 Gaufres</button>
+        <button class="tab" role="tab" aria-selected="false" data-t="shakes">🥤 Milkshakes & smoothies</button>
+        <button class="tab" role="tab" aria-selected="false" data-t="cookies">🍪 Cookies & douceurs</button>
+        <button class="tab" role="tab" aria-selected="false" data-t="cafes">☕ Cafés & boissons</button>
+      </div>
+      <div class="panel active" id="crepes" role="tabpanel">
+        <div><div class="em">🥞</div><h3>Crêpes gourmandes</h3><p class="desc">Garnies et nappées comme on les aime, des classiques aux créations du moment.</p></div>
+        <ul class="items">
+          <li><span class="n">Crêpe sucre</span><span class="dots"></span><span class="p">–</span></li>
+          <li><span class="n">Crêpe au chocolat</span><span class="dots"></span><span class="p">–</span></li>
+          <li><span class="n">Crêpe fraises & coulis<small>Fraises fraîches, coulis de fraise</small></span><span class="dots"></span><span class="p">–</span></li>
+          <li><span class="n">La création du moment</span><span class="dots"></span><span class="p">–</span></li>
+        </ul>
+      </div>
+      <div class="panel" id="gaufres" role="tabpanel">
+        <div><div class="em">🧇</div><h3>Gaufres généreuses</h3><p class="desc">Croustillantes, moelleuses et bien garnies.</p></div>
+        <ul class="items">
+          <li><span class="n">Gaufre sucre glace</span><span class="dots"></span><span class="p">–</span></li>
+          <li><span class="n">Gaufre chocolat</span><span class="dots"></span><span class="p">–</span></li>
+          <li><span class="n">Gaufre aux fraises & glace</span><span class="dots"></span><span class="p">–</span></li>
+        </ul>
+      </div>
+      <div class="panel" id="shakes" role="tabpanel">
+        <div><div class="em">🥤</div><h3>Milkshakes & smoothies</h3><p class="desc">Des milkshakes onctueux et des smoothies frais aux fruits.</p></div>
+        <ul class="items">
+          <li><span class="n">Milkshake vanille, chocolat ou fraise</span><span class="dots"></span><span class="p">–</span></li>
+          <li><span class="n">Milkshake gourmand du moment</span><span class="dots"></span><span class="p">–</span></li>
+          <li><span class="n">Smoothie fruits rouges</span><span class="dots"></span><span class="p">–</span></li>
+          <li><span class="n">Smoothie exotique</span><span class="dots"></span><span class="p">–</span></li>
+        </ul>
+      </div>
+      <div class="panel" id="cookies" role="tabpanel">
+        <div><div class="em">🍪</div><h3>Cookies & douceurs</h3><p class="desc">Pour accompagner une boisson, sur place ou à emporter.</p></div>
+        <ul class="items">
+          <li><span class="n">Cookie</span><span class="dots"></span><span class="p">–</span></li>
+          <li><span class="n">Douceur du jour</span><span class="dots"></span><span class="p">–</span></li>
+        </ul>
+      </div>
+      <div class="panel" id="cafes" role="tabpanel">
+        <div><div class="em">☕</div><h3>Cafés & boissons gourmandes</h3><p class="desc">Le petit café de la matinée ou une boisson chaude toute en gourmandise.</p></div>
+        <ul class="items">
+          <li><span class="n">Café / expresso</span><span class="dots"></span><span class="p">–</span></li>
+          <li><span class="n">Cappuccino</span><span class="dots"></span><span class="p">–</span></li>
+          <li><span class="n">Chocolat chaud gourmand</span><span class="dots"></span><span class="p">–</span></li>
+        </ul>
+      </div>
+      <span class="demo-note">✎ Maquette : produits donnés à titre d'exemple, à remplacer par votre carte et vos prix</span>
+    </div>
+    <p class="note reveal">La carte complète et les prix sont à découvrir en boutique et sur notre Instagram.</p>
+  </div>
+</section>
+
+<section class="engage">
+  <div class="wrap">
+    <div class="box reveal">
+      <div class="ribbon" aria-hidden="true">🎀</div>
+      <div>
+        <span class="kicker">Gourmands & solidaires</span>
+        <h2>Une adresse engagée</h2>
+        <p>En octobre 2026, notre enseigne s'est illuminée de rose chaque soir pour Octobre Rose, et une partie des ventes de notre crêpe spéciale a été reversée à l'association ÉMERA, Espace Ressources Cancer de Cambrai.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="insta">
+  <div class="wrap">
+    <div class="head reveal">
+      <div><span class="kicker">Sur Instagram</span><h2>@sucrelya_cambrai</h2></div>
+      <a class="btn btn-main" href="https://www.instagram.com/sucrelya_cambrai/" target="_blank" rel="noopener">Nous suivre</a>
+    </div>
+    <!-- Fil Instagram : à remplacer par un widget automatique (Behold, LightWidget…) une fois le compte relié -->
+    <div class="insta-grid reveal">
+      <a href="https://www.instagram.com/sucrelya_cambrai/" target="_blank" rel="noopener" aria-label="Voir sur Instagram"><img src="img/crepe-fraise.jpg" alt="Crêpe aux fraises" loading="lazy"></a>
+      <a href="https://www.instagram.com/sucrelya_cambrai/" target="_blank" rel="noopener" aria-label="Voir sur Instagram"><img src="img/salle.jpg" alt="La salle de Sucrélya" loading="lazy"></a>
+      <a href="https://www.instagram.com/sucrelya_cambrai/" target="_blank" rel="noopener" aria-label="Voir sur Instagram"><img src="img/enseigne.jpg" alt="L'enseigne néon" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<section class="avis" id="avis">
+  <div class="wrap">
+    <div class="avis-head reveal">
+      <div>
+        <span class="kicker">Ils nous ont goûtés</span>
+        <h2>Ce que vous en dites</h2>
+      </div>
+      <a class="score" href="https://maps.google.com/?cid=1557421811045022729" target="_blank" rel="noopener" aria-label="Note Google : 4,3 sur 5, 110 avis">
+        <span class="g">G</span>
+        <span><strong>4,3</strong><span class="st" aria-hidden="true"><i style="--v:86%"></i></span><small>110 avis Google</small></span>
+      </a>
+    </div>
+    <!-- Avis repris de la fiche Google (novembre 2026). Sur le site final : widget automatique ou mise à jour régulière. -->
+    <div class="reviews reveal">
+      <figure class="rv">
+        <div class="rv-st" aria-label="5 étoiles">★★★★★</div>
+        <blockquote>Depuis l'ouverture, nous y allons régulièrement avec ma fille pour déguster un « petit » goûter. Les gaufres et les crêpes sont excellentes.</blockquote>
+        <figcaption><span class="av">S</span><span><b>Sylvie Q.</b><small>Avis Google · septembre 2026</small></span></figcaption>
+      </figure>
+      <figure class="rv">
+        <div class="rv-st" aria-label="5 étoiles">★★★★★</div>
+        <blockquote>Très bonne expérience chez Sucrélya ! Les produits sont délicieux, frais et bien présentés. Je recommande sans hésiter&nbsp;!</blockquote>
+        <figcaption><span class="av">N</span><span><b>Ness</b><small>Avis Google · septembre 2026</small></span></figcaption>
+      </figure>
+      <figure class="rv">
+        <div class="rv-st" aria-label="5 étoiles">★★★★★</div>
+        <blockquote>Une excellente expérience ! Le service est rapide, l'accueil est particulièrement chaleureux et professionnel. J'y retournerai sans hésiter&nbsp;!</blockquote>
+        <figcaption><span class="av">A</span><span><b>Andy F.</b><small>Avis Google · août 2026</small></span></figcaption>
+      </figure>
+    </div>
+    <div class="avis-cta reveal">
+      <a class="btn btn-main" href="https://maps.google.com/?cid=1557421811045022729" target="_blank" rel="noopener">Laisser un avis</a>
+      <a class="btn btn-ghost" href="https://maps.google.com/?cid=1557421811045022729" target="_blank" rel="noopener">Voir tous les avis</a>
+    </div>
+  </div>
+</section>
+
+<section class="priv" id="evenements">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">Événements & privatisation</span>
+      <h2>Votre événement chez Sucrélya</h2>
+      <p style="margin-top:1rem;color:var(--choco-soft);font-size:1.05rem">Un anniversaire, une fête entre amis, un moment en équipe ? Offrez à vos invités une pause gourmande dans notre univers tout en rose. Envoyez-nous votre demande, on revient vers vous pour l'organiser ensemble.</p>
+      <ul class="perks">
+        <li><span>🎂</span>Anniversaires, enfants comme adultes</li>
+        <li><span>👯</span>Sorties entre amis, EVJF</li>
+        <li><span>🍼</span>Baby showers & fêtes de famille</li>
+        <li><span>💼</span>Événements d'entreprise & pauses d'équipe</li>
+      </ul>
+    </div>
+    <form class="f reveal" id="evtForm" novalidate>
+      <label>Nom<input name="nom" required autocomplete="name"></label>
+      <label>Téléphone<input name="tel" type="tel" required autocomplete="tel"></label>
+      <label class="full">E-mail<input name="email" type="email" autocomplete="email"></label>
+      <label>Date souhaitée<input name="date" type="date" required></label>
+      <label>Nombre de personnes<input name="nb" type="number" min="1" required></label>
+      <label class="full">Type d'événement<select name="type"><option>Anniversaire</option><option>Sortie entre amis / EVJF</option><option>Baby shower / fête de famille</option><option>Événement d'entreprise</option><option>Autre</option></select></label>
+      <label class="full">Votre message<textarea name="message" placeholder="Horaire souhaité, âge des enfants, envies particulières, budget…"></textarea></label>
+      <button class="btn btn-main full" type="submit">Préparer ma demande par e-mail</button>
+      <p class="msg full" id="evtMsg">Votre demande s'ouvrira dans votre messagerie, prête à être envoyée à sucrelyacambrai@gmail.com.</p>
+    </form>
+  </div>
+</section>
+
+<section class="infos" id="infos">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">Horaires</span>
+      <h2>Quand passer nous voir&nbsp;?</h2>
+      <ul class="hours" id="hours">
+        <li data-day="1"><span class="d">Lundi</span><span class="closed">Fermé</span></li>
+        <li data-day="2"><span class="d">Mardi</span><span>13h – 19h</span></li>
+        <li data-day="3"><span class="d">Mercredi</span><span>10h30 – 19h</span></li>
+        <li data-day="4"><span class="d">Jeudi</span><span>13h – 19h</span></li>
+        <li data-day="5"><span class="d">Vendredi</span><span>13h – 20h</span></li>
+        <li data-day="6"><span class="d">Samedi</span><span>10h30 – 20h</span></li>
+        <li data-day="0"><span class="d">Dimanche</span><span>15h – 18h</span></li>
+      </ul>
+    </div>
+    <div class="reveal">
+      <span class="kicker">Accès & contact</span>
+      <h2>Rue Pasteur, Cambrai</h2>
+      <ul class="contact-list">
+        <li><div class="ic">📍</div><div><small>Adresse</small><a href="https://www.google.com/maps/search/?api=1&query=Sucr%C3%A9lya+4+rue+Pasteur+59400+Cambrai" target="_blank" rel="noopener">4 rue Pasteur, 59400 Cambrai</a><br><span style="font-size:.9rem;color:var(--choco-soft)">Itinéraire Google Maps →</span></div></li>
+        <li><div class="ic">📞</div><div><small>Téléphone</small><a href="tel:+33670497636">06 70 49 76 36</a></div></li>
+        <li><div class="ic">✉️</div><div><small>E-mail</small><a href="mailto:sucrelyacambrai@gmail.com">sucrelyacambrai@gmail.com</a></div></li>
+      </ul>
+      <div class="socials">
+        <a class="btn btn-main" href="https://www.instagram.com/sucrelya_cambrai/" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn-ghost" href="https://www.facebook.com/p/Sucrelya-61592575572332/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="map reveal">
+      <div class="fb">📍 4 rue Pasteur, Cambrai<br><span style="font-weight:400;font-size:.9rem">Carte Google Maps (visible sur le site en ligne)</span></div>
+      <iframe title="Plan d'accès Sucrélya" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=4+rue+Pasteur,+59400+Cambrai&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="neon" aria-label="À très vite">
+  <img src="img/enseigne.jpg" alt="">
+  <div><p class="big">À très vite chez Sucrélya</p><p class="sm">Un moment 100 % plaisir</p></div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="#top" class="brand"><div class="logo">S</div><span>Sucrélya</span></a>
+    <span>© 2026 Sucrélya · 4 rue Pasteur, 59400 Cambrai</span>
+    <span>Site réalisé par <a href="https://nkdigital.fr" target="_blank" rel="noopener">NK Digital</a></span>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Actions rapides">
+  <a href="tel:+33670497636"><b>📞</b>Appeler</a>
+  <a href="https://www.google.com/maps/dir/?api=1&destination=4+rue+Pasteur+59400+Cambrai" target="_blank" rel="noopener"><b>📍</b>Itinéraire</a>
+  <a href="https://www.instagram.com/sucrelya_cambrai/" target="_blank" rel="noopener"><b>📷</b>Instagram</a>
+</nav>
+
+<script>
+// Barre de navigation au défilement
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40),{passive:true});
+
+// Horaires : jour en cours + statut ouvert/fermé (heure de Paris)
+const H={0:[[15,0],[18,0]],1:null,2:[[13,0],[19,0]],3:[[10,30],[19,0]],4:[[13,0],[19,0]],5:[[13,0],[20,0]],6:[[10,30],[20,0]]};
+const p=new Intl.DateTimeFormat('fr-FR',{timeZone:'Europe/Paris',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+const wd=['dim.','lun.','mar.','mer.','jeu.','ven.','sam.'].indexOf(p.find(x=>x.type==='weekday').value);
+const mins=+p.find(x=>x.type==='hour').value*60+ +p.find(x=>x.type==='minute').value;
+document.querySelector(`#hours li[data-day="${wd}"]`)?.classList.add('today');
+const t=H[wd], st=document.getElementById('status'), lab=st.querySelector('span');
+const f=([h,m])=>h+'h'+(m?String(m).padStart(2,'0'):'');
+if(t && mins>=t[0][0]*60+t[0][1] && mins<t[1][0]*60+t[1][1]){st.classList.add('open');lab.textContent='Ouvert · jusqu’à '+f(t[1]);}
+else if(t && mins<t[0][0]*60+t[0][1]){lab.textContent='Fermé · ouvre à '+f(t[0]);}
+else{lab.textContent='Fermé pour le moment';}
+
+// Carte à onglets
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.setAttribute('aria-selected',x===b));
+  document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===b.dataset.t));
+}));
+
+// Formulaire événements : prépare un e-mail (aucun envoi automatique)
+document.getElementById('evtForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const f=e.target, d=Object.fromEntries(new FormData(f)), m=document.getElementById('evtMsg');
+  if(!d.nom||!d.tel||!d.date||!d.nb){m.textContent='Merci de remplir le nom, le téléphone, la date et le nombre de personnes.';m.style.color='#E23C86';return;}
+  const date=new Date(d.date).toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+  const body=`Bonjour Sucrélya,\n\nJe souhaiterais organiser un événement chez vous.\nType : ${d.type}\nDate souhaitée : ${date}\nNombre de personnes : ${d.nb}\n\n${d.message||''}\n\n${d.nom}\n${d.tel}${d.email?'\n'+d.email:''}`;
+  location.href='mailto:sucrelyacambrai@gmail.com?subject='+encodeURIComponent('Demande d\u2019événement : '+d.type+' le '+date)+'&body='+encodeURIComponent(body);
+  m.style.color='';m.innerHTML='Votre messagerie va s\u2019ouvrir avec la demande pr\u00eate. Si rien ne s\u2019affiche, écrivez-nous à <strong>sucrelyacambrai@gmail.com</strong> ou appelez le <strong>06 70 49 76 36</strong>.';
+});
+
+// Apparition au défilement
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
